@@ -13,7 +13,7 @@ vimrc　vim設定ファイル
 - 環境2
 - Windows Vista SP2
 - Command prompt
-- Vim version 7.4.274
+- [Vim version 7.4.274](http://www.kaoriya.net/software/vim/)
 
 コマンドプロンプトでエディタを使う場合、フルパスで指定する必要があり、利便性を考慮すると先にPATHを通しておくことが望ましい。システム環境変数で設定できる。ついでにサクラエディタとTerapadも導入。
 
