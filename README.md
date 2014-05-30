@@ -27,32 +27,13 @@ vimrc　vim設定ファイル
 これとは関係ないが、家のパソコンだとミュートではないのでESCキー連打するとポポポンと音がうるさいのが困る。
 
 
-以下 _vimrc  の中身
+以下 _vimrc  の中身(環境1のVimrcに追加する形)
 ***
 ```
-#検索と補完機能
-set incsearch
-set wildmenu wildmode=list:full
+#文字化けしたから念のため書く(指定コードがまだ定まってない)
+set encoding utf-8
+setl fenc=utf-8
 
-#カーソルライン
-syntax on
-set nohlsearch
-set cursorline
-
-#文字ハイライト
-highlight Normal ctermbg=black ctermfg=grey
-highlight StatusLine term=none cterm=none ctermfg=black ctermbg=grey
-highlight CursorLine term=none cterm=none ctermfg=none ctermbg=darkgray
-
-#行番号
-set number
-
-#インデント
-set tabstop=2
-
-#ステータス表示
-set laststatus=2
-set statusline=%F%r%h%=
 ```
 ここまで
 ***
@@ -62,24 +43,23 @@ set statusline=%F%r%h%=
 .vimrc
 
 ```
-  1 set expandtab
-  2 set tabstop=2
-  3 set shiftwidth=2
-  4
-  5 set number
-  6 set ruler
-  7 set cursorline
-  8 set laststatus=2
-  9 set cmdheight=2
- 10 set whichwrap=b,s,h,l,<,>,[,]
- 11
- 12 set wildmenu wildmode=list:longest,full
- 13 set history=100
- 14
- 15 set incsearch
- 16 set wildmenu wildmode=list:full
- 17
- 18 set statusline=%F%r%h%=
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+set number
+set ruler
+set cursorline
+set laststatus=2
+set cmdheight=2
+set whichwrap=b,s,h,l,<,>,[,]
+
+set wildmenu wildmode=list:longest,full
+set history=100
+
+set incsearch
+set wildmenu wildmode=list:full
+set statusline=%F%r%h%=
 ```
 ***
 
