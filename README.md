@@ -10,7 +10,7 @@ vimrc　vim設定ファイル
 
 現段階で見よう見まね
 
-- 環境2
+#環境2
 - Windows Vista SP2
 - Command prompt
 - [Vim version 7.4.274](http://www.kaoriya.net/software/vim/)
@@ -54,5 +54,32 @@ set tabstop=2
 set laststatus=2
 set statusline=%F%r%h%=
 ```
-***
 ここまで
+***
+
+
+#環境1 14/05/30 17:29
+.vimrc
+
+```
+  1 set expandtab
+  2 set tabstop=2
+  3 set shiftwidth=2
+  4
+  5 set number
+  6 set ruler
+  7 set cursorline
+  8 set laststatus=2
+  9 set cmdheight=2
+ 10 set whichwrap=b,s,h,l,<,>,[,]
+ 11
+ 12 set wildmenu wildmode=list:longest,full
+ 13 set history=100
+ 14
+ 15 set incsearch
+ 16 set wildmenu wildmode=list:full
+ 17
+ 18 set statusline=%F%r%h%=
+```
+***
+
