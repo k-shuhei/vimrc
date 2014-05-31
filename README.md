@@ -21,23 +21,46 @@ vimrc　vim設定ファイル
 
 このWindows用のvimとubuntuのvimで異なる点
 - 日本語入力切替　Alt + 半角英数
+(戻すときは、半角英数だけでok)
 
 大いに評価する。ESCキーと間違って日本語入力になることはなく、意識して切り替えが出来る。
 
 これとは関係ないが、家のパソコンだとミュートではないのでESCキー連打するとポポポンと音がうるさいのが困る。
 
-git commitで香り屋vimを使うと文字化けするが、.mdファイルの編集に関しては文字化けしないことが分かったので、設定の変更は無し。
+H4 git commitで香り屋vimを使うと文字化けする問題
 
-git commit時のメッセージは`git commit -m ""`という風に打つことにした。~~最初からそうしろ~~
+vi,さくらエディタ,Terapad,Notepadも同様:
+- windowsで使うgit(Git Bash)では日本語がサポートされてないっぽい。
 
-~~#文字化け対策(内部エンコーディングをからUTF-8へ。)~~
+参考：[WindowsでGitのコミットログが文字化けする問題の対処法](http://togetter.com/li/103988?page=1)
+
+コマンドラインからコミットメッセージを書きこむとGitHub上からは文字化けせず正常に見れた。よって、git commit時のメッセージは`$ git commit -m "message"`という風に打つことにした。~~最初からそうしろ~~
+
+`$ git commit -m "日本語文"`を打つとエラーメッセージが出た。
+``
+Warning: Your console font probably doesn't support Unicode. If you experience strange characters in
+ the output, consider switching to a TrueType font such as Lucida Console!
+``
+
+H3 文字化け解消の試行錯誤中に
+
+下の設定をしたら、vimでファイルひらくと文字化けしたので止める。
+~~#文字化け対策(内部エンコーディングからUTF-8へ。)~~
 
 ~~kaoriya vimフォルダの/switches/catalog/utf-8.vim を /switches/enabled へコピー~~
 
-以下 _vimrc  の中身(環境1のVimrcに追加する形)
+
+#実際のvim設定ファイル
+- 以下 _vimrc  の中身(環境1のVimrcに追加する形)
+
+参考: [.vimrc-サンプル設定](https://sites.google.com/site/fudist/Home/vim-nihongo-ban/-vimrc-sample)
+
 ***
 ```
-#今のところ無し
+set nowritebackup
+set nobackup
+set wildmenu
+set noerrorbells
 ```
 ここまで
 ***
