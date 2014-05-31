@@ -26,9 +26,13 @@ vimrc　vim設定ファイル
 
 これとは関係ないが、家のパソコンだとミュートではないのでESCキー連打するとポポポンと音がうるさいのが困る。
 
-#文字化け対策(内部エンコーディングをからUTF-8へ。)
+git commitで香り屋vimを使うと文字化けするが、.mdファイルの編集に関しては文字化けしないことが分かったので、設定の変更は無し。
 
-kaoriya vimフォルダの/switches/catalog/utf-8.vim を /switches/enabled へコピー
+git commit時のメッセージは`git commit -m ""`という風に打つことにした。~~最初からそうしろ~~
+
+~~#文字化け対策(内部エンコーディングをからUTF-8へ。)~~
+
+~~kaoriya vimフォルダの/switches/catalog/utf-8.vim を /switches/enabled へコピー~~
 
 以下 _vimrc  の中身(環境1のVimrcに追加する形)
 ***
