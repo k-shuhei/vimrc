@@ -34,14 +34,23 @@ vi,さくらエディタ,Terapad,Notepadも同様:
 
 参考：[WindowsでGitのコミットログが文字化けする問題の対処法](http://togetter.com/li/103988?page=1)
 
-コマンドラインからコミットメッセージを書きこむとGitHub上からは文字化けせず正常に見れた。よって、git commit時のメッセージは`git commit -m "message"`という風に打つことにした。~~最初からそうしろ~~
+コマンドラインからコミットメッセージを書きこむとGitHub上からは文字化けせず正常に見れた。よって、git commit時のメッセージは`$ git commit -m "message"`という風に打つことにした。~~最初からそうしろ~~
 
+`$ git commit -m "日本語文"`を打つとエラーメッセージが出た。
+``
+Warning: Your console font probably doesn't support Unicode. If you experience strange characters in
+ the output, consider switching to a TrueType font such as Lucida Console!
+``
+
+H3 文字化け解消の試行錯誤中に
 
 下の設定をしたら、vimでファイルひらくと文字化けしたので止める。
 ~~#文字化け対策(内部エンコーディングからUTF-8へ。)~~
 
 ~~kaoriya vimフォルダの/switches/catalog/utf-8.vim を /switches/enabled へコピー~~
 
+
+#実際のvim設定ファイル
 - 以下 _vimrc  の中身(環境1のVimrcに追加する形)
 
 参考: [.vimrc-サンプル設定](https://sites.google.com/site/fudist/Home/vim-nihongo-ban/-vimrc-sample)
