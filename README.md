@@ -27,13 +27,17 @@ vimrc　vim設定ファイル
 
 これとは関係ないが、家のパソコンだとミュートではないのでESCキー連打するとポポポンと音がうるさいのが困る。
 
-H4 git commitで香り屋vimを使うと文字化けするが、.mdファイルの編集に関しては文字化けしないことが分かったので、設定の変更は無し。
+H4 git commitで香り屋vimを使うと文字化けする問題
 
-(さくらエディタ,Terapad,Notepadも同様)
+vi,さくらエディタ,Terapad,Notepadも同様:
+- windowsで使うgit(Git Bash)では日本語がサポートされてないっぽい。
+
+参考：[WindowsでGitのコミットログが文字化けする問題の対処法](http://togetter.com/li/103988?page=1)
+
+コマンドラインからコミットメッセージを書きこむとGitHub上からは文字化けせず正常に見れた。よって、git commit時のメッセージは`git commit -m "message"`という風に打つことにした。~~最初からそうしろ~~
 
 
-git commit時のメッセージは`git commit -m "message"`という風に打つことにした。~~最初からそうしろ~~
-
+下の設定をしたら、vimでファイルひらくと文字化けしたので止める。
 ~~#文字化け対策(内部エンコーディングからUTF-8へ。)~~
 
 ~~kaoriya vimフォルダの/switches/catalog/utf-8.vim を /switches/enabled へコピー~~
@@ -44,6 +48,7 @@ git commit時のメッセージは`git commit -m "message"`という風に打つ
 
 ***
 ```
+set nowritebackup
 set nobackup
 set wildmenu
 set noerrorbells
