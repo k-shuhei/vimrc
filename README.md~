@@ -26,7 +26,7 @@ vimrc　vim設定ファイル
 
 これとは関係ないが、家のパソコンだとミュートではないのでESCキー連打するとポポポンと音がうるさいのが困る。
 
-H3 文字化け対策(内部エンコーディングをからUTF-8へ。)
+#文字化け対策(内部エンコーディングをからUTF-8へ。)
 
 kaoriya vimフォルダの/switches/catalog/utf-8.vim を /switches/enabled へコピー
 
