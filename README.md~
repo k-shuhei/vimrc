@@ -31,7 +31,8 @@ vimrc　vim設定ファイル
 ***
 ```
 #文字化けしたから念のため書く(指定コードがまだ定まってない)
-set fenc=utf-8
+set encoding utf-8
+setl fenc=utf-8
 
 ```
 ここまで
