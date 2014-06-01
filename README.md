@@ -47,7 +47,7 @@ syntax on
 #### git commitで香り屋vimを使うと文字化けする問題
 
 vi,さくらエディタ,Terapad,Notepadも同様:
-- windowsで使うgit(Git Bash)では日本語がサポートされてないっぽい。
+- windowsで使うgit(:msysgit,Git 1.8.4より前のVersion)では日本語がサポートされてないっぽい。
 
 参考：[WindowsでGitのコミットログが文字化けする問題の対処法](http://togetter.com/li/103988?page=1)
 
