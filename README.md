@@ -10,6 +10,19 @@ vimrc　vim設定ファイル
 
 現段階で見よう見まね
 
+#環境3
+- Windows Vista SP2(環境2と同じPC)
+- VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Feb 21 2014 18:03:10) MS-Windows 32-bit console version
+- MINGW (Git version 1.9.2-preview20140411に付属)
+
+コマンドラインは使い勝手がいいが、初期状態のVimでは構文が色分けされない。なので、カラースキームの導入と下の設定を追加したが、色分けされなかった。もう少し調べる必要あり。
+
+```
+set nocompatible
+syntax on
+```
+
+***
 #環境2
 - Windows Vista SP2
 - Command prompt
@@ -18,8 +31,6 @@ vimrc　vim設定ファイル
 コマンドプロンプトでエディタを使う場合、フルパスで指定する必要があり、利便性を考慮すると先にPATHを通しておくことが望ましい。システム環境変数で設定できる。ついでにサクラエディタとTerapadも導入。
 
 (エディタだけに限らない。良く使うプログラムは先にパスを通すべき)
-
-
 
 
 #### このWindows用のvimとubuntuのvimで異なる点
