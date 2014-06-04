@@ -34,10 +34,10 @@ syntax on
 
 
 #### このWindows用のvimとubuntuのvimで異なる点
-- 日本語入力切替　Alt + 半角英数
-(戻すときは、半角英数だけでok)
+- 日本語入力切替　Alt + 半角全角
+(戻すときは、半角全角だけでok)
 
-大いに評価する。ESCキーと間違って日本語入力になることはなく、意識して切り替えが出来る。
+大いに評価する。ESCのつもりがうっかり半角全角を押して日本語入力になることはなく、これにより意識して切り替えが出来る。
 
 これとは関係ないが、家のパソコンだとミュートではないのでESCキー連打するとポポポンと音がうるさいのが困る。
 
@@ -64,14 +64,14 @@ Warning: Your console font probably doesn't support Unicode. If you experience s
 
 #### 文字化け解消の試行錯誤中に
 
-下の設定をしたら、vimでファイルひらくと文字化けしたので止める。
-~~#文字化け対策(内部エンコーディングからUTF-8へ。)~~
+下の設定をして、vimでファイルひらくと文字化けしたのでやめる。
+~~#文字化け対策(内部エンコーディングをUTF-8へ。)~~
 
 ~~kaoriya vimフォルダの/switches/catalog/utf-8.vim を /switches/enabled へコピー~~
 
 
 #実際のvim設定ファイル
-- 以下 _vimrc  の中身(環境1のVimrcに追加する形)
+- 以下 _vimrc  の中身(環境1のVimrcに追加)
 
 参考: [.vimrc-サンプル設定](https://sites.google.com/site/fudist/Home/vim-nihongo-ban/-vimrc-sample)
 
