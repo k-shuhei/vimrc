@@ -10,6 +10,32 @@ vimrc　vim設定ファイル
 
 現段階で見よう見まね
 
+#環境4
+- Windows Vista SP2(環境2と同じPC)
+- VIM - Vi IMproved version 7.4.335
+- Cygwin - mintty 1.1.3 
+
+```
+set nocp
+syntax on
+set nobackup
+set backspace=start,eol,indent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set number
+set ruler
+set cursorline
+set laststatus=2
+set cmdheight=2
+set whichwrap=b,s,h,l,<,>,[,]
+set wildmenu wildmode=list:longest,full
+set history=100
+set incsearch
+set wildmenu wildmode=list:full
+set statusline=%F%r%h%=
+```
+
 #環境3
 - Windows Vista SP2(環境2と同じPC)
 - VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Feb 21 2014 18:03:10) MS-Windows 32-bit console version
